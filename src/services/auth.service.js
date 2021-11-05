@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://127.0.0.1:3000';
+const API_URL = 'https://see-a-doctor-backend.herokuapp.com/';
 
 const register = (name, password) => axios.post(`${API_URL}/users`, {
   name,

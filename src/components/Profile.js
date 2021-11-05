@@ -12,18 +12,18 @@ const Profile = () => {
   return (
     <div className="container">
       <h3>
-        <strong>{currentUser.user.name}</strong>
+        <strong>{currentUser.name}</strong>
         {' '}
         Profile
       </h3>
       <p>
         <strong>Token:</strong>
         {' '}
-        {currentUser.jwt.substring(0, 20)}
+        {currentUser.jwt}
         {' '}
         ...
         {' '}
-        {currentUser.jwt.substr(currentUser.jwt.length - 20)}
+        {currentUser.jwt}
       </p>
       <p>
         <strong>Id:</strong>

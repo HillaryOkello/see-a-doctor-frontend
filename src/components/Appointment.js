@@ -21,7 +21,7 @@ const Appointment = () => {
     UserService.getAppointment(currentUser.user.id, id).then(
       (response) => {
         setContent(response.data);
-        return response.data.doctorId;
+        return response.data.doctor_id;
       },
       (error) => {
         setLoading(false);

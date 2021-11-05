@@ -25,13 +25,11 @@ export const register = (name, password) => (dispatch) => AuthService.register(n
     return Promise.resolve();
   },
   (error) => {
-    console.log(error.response);
     const message = (error.response
           && error.response.data
           && error.response.data.message)
         || error.message
         || error.toString();
-    // const message = error.response.data.errors[0];
     dispatch({
       type: REGISTER_FAIL,
     });

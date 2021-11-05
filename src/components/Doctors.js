@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import getDoctors from '../actions/user';
+import SocialIcons from './SocialIcons';
 import classes from '../styles/Doctors.module.css';
 
 const Doctors = () => {
@@ -38,12 +39,9 @@ const Doctors = () => {
         <div className="d-flex flex-column align-items-center">
           <img src={doctor.image} alt={doctor.name} className={`rounded-circle ${classes.img}`} />
           <h5 className="text-dark p-4">{doctor.name}</h5>
-          {/* <p className="text-secondary mt-3">
-            <strong>Qualification:&nbsp;</strong>
-            {doctor.qualification}
-          </p> */}
         </div>
       </Link>
+      <SocialIcons />
     </div>
   ));
   return (
@@ -56,7 +54,6 @@ const Doctors = () => {
       <Carousel
         additionalTransfrom={0}
         arrows
-        autoPlaySpeed={2000}
         centerMode={false}
         className=""
         containerClass="container"

@@ -31,12 +31,13 @@ const SideBar = () => {
           {/* <img src={logo} alt="logo" className={classes.logo} /> */}
           <h2 className={classes.logo}>Hilnex Hospital</h2>
         </NavLink>
-        {currentUser
+        {/* {currentUser
             && (
               <NavLink to="/profile" className={classes.navlink} activeClassName={classes.active}>
-                {currentUser.user}
+                {currentUser.name}
+                {console.log(currentUser.name)}
               </NavLink>
-            )}
+            )} */}
         {currentUser ? (
           <ul>
             <li>

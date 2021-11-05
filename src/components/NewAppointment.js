@@ -71,7 +71,6 @@ const NewAppointment = ({ location }) => {
 
     // eslint-disable-next-line no-underscore-dangle
     if (checkBtn.current.context._errors.length === 0) {
-      console.log(currentUser);
       userService.postAppointment(currentUser.user, doctorId, appointmentDate)
         .then(() => {
           setLoading(false);

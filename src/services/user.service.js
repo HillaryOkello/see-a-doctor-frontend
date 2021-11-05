@@ -1,7 +1,7 @@
 import axios from 'axios';
 import authHeader from './auth-header';
 
-const API_URL = 'http://127.0.0.1:3000';
+const API_URL = 'https://see-a-doctor-backend.herokuapp.com/';
 
 const getDoctors = () => axios.get(`${API_URL}/doctors`, { headers: authHeader() });
 const getDoctor = (id) => axios.get(`${API_URL}/doctors/${id}`, { headers: authHeader() });

@@ -11,7 +11,7 @@ const Appointments = () => {
 
   useEffect(() => {
     if (currentUser) {
-      UserService.getAppointments(currentUser.user.id).then(
+      UserService.getAppointments(currentUser.user).then(
         (response) => {
           setLoading(false);
           setContent(response.data);
@@ -36,7 +36,7 @@ const Appointments = () => {
   if (!loading && content.length === 0) {
     appointments = (
       <h4>
-        You do not have any appointment. Create one
+        You do not have any appointment. Create one by clicking
         <Link to="/appointments/new">
           here
         </Link>
