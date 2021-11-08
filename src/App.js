@@ -5,15 +5,15 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
-import Register from './components/Register';
-import Login from './components/Login';
+import Register from './containers/Register';
+import Login from './containers/Login';
 import { clearMessage } from './actions/message';
-import Doctors from './components/Doctors';
+import Doctors from './containers/Doctors';
 import SideBar from './components/SideBar';
-import Doctor from './components/Doctor';
-import NewAppointment from './components/NewAppointment';
-import Appointments from './components/Appointments';
-import Appointment from './components/Appointment';
+import Doctor from './containers/Doctor';
+import NewAppointment from './containers/NewAppointment';
+import Appointments from './containers/Appointments';
+import Appointment from './containers/Appointment';
 
 const App = () => {
   const dispatch = useDispatch();

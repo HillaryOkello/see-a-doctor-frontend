@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import getDoctors from '../actions/user';
-import SocialIcons from './SocialIcons';
+import SocialIcons from '../components/SocialIcons';
 import classes from '../styles/Doctors.module.css';
 
 const Doctors = () => {
