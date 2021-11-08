@@ -5,7 +5,7 @@ import { Provider } from 'react-redux';
 import store from '../../store';
 import Login from '../../containers/Login';
 
-configure({adapter: new Adapter()});
+configure({ adapter: new Adapter() });
 describe('itemDetailedView test', () => {
   let wrapper;
 
