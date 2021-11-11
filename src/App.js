@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import {
-  Switch, Route, useLocation,
+  Switch, Route,
 } from 'react-router-dom';
 import './App.css';
 import Home from './components/Home';
@@ -17,24 +17,23 @@ import Appointment from './containers/Appointment';
 
 const App = () => {
   const dispatch = useDispatch();
-  const location = useLocation();
   useEffect(() => {
     dispatch(clearMessage());
-  }, [dispatch, location]);
+  }, [dispatch]);
 
   return (
     <div>
       <SideBar />
       <main>
         <Switch>
-          <Route exact path={['/', '/home']} component={Home} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/register" component={Register} />
-          <Route exact path="/doctors" component={Doctors} />
-          <Route exact path="/doctors/:id" component={Doctor} />
-          <Route exact path="/appointments/new" component={NewAppointment} />
-          <Route exact path="/appointments" component={Appointments} />
-          <Route exact path="/appointments/:id" component={Appointment} />
+          <Route exact id="Home" path={['/', '/home']} component={Home} />
+          <Route exact id="Login" path="/login" component={Login} />
+          <Route exact id="Register" path="/register" component={Register} />
+          <Route exact id="Doctors" path="/doctors" component={Doctors} />
+          <Route exact id="Doctor" path="/doctors/:id" component={Doctor} />
+          <Route exact id="NewAppointment" path="/appointments/new" component={NewAppointment} />
+          <Route exact id="Appointments" path="/appointments" component={Appointments} />
+          <Route exact id="Appointment" path="/appointments/:id" component={Appointment} />
         </Switch>
       </main>
     </div>
