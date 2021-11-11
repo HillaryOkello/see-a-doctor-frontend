@@ -1,7 +1,6 @@
 import React from 'react';
 import Adapter from 'enzyme-adapter-react-16';
-import { Route, Switch } from 'react-router';
-import { BrowserRouter } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import { shallow, configure } from 'enzyme';
 import App from '../../App';
 import SideBar from '../../components/SideBar';
