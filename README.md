@@ -1,44 +1,95 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-## Available Scripts
+# Hilnex Hospital - Book appointment with doctor
 
-In the project directory, you can run:
+![Top Page Screenshot](./src/assets/Screenshot.png)
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [About the Project](#about-the-project)
+- [Description](#description)
+- [Built With](#built-with)
+- [Live Demo](#live-demo)
+- [Getting Started](#getting-started)
+- [Testing](#testing)
+- [Authors](#authors)
+- [Contributing](#contributing)
+- [Show your support](#show-your-support)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## About the Project
 
-### `npm test`
+> This is an appointment booking app for the hospital. A user can sign up, login and book an appointment with a doctor.
+> The front end is built with [React](https://reactjs.org/) and [Redux](https://redux.js.org/).
+> The back end is built with [Ruby on Rails](https://rubyonrails.org/) and has been deployed to [Heroku](https://www.heroku.com/)
+> [PostgreSQL](https://www.postgresql.org/) is the database employed to store the data.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Description
 
-### `npm run build`
+> A user creates an account and logs in. The user can see the list of doctors and book an appointment with a doctor. The user is able to view all their appointments. The user can also cancel an appointment.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Built With
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [React](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [Node package manager](https://www.npmjs.com/)
+- [Ruby](https://www.ruby-lang.org/en/)
+- [Ruby on Rails](https://rubyonrails.org/)
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [CSS](https://www.w3schools.com/Css/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Live Demo
 
-### `npm run eject`
+[Live Demo Link](https://see-a-doctor-frontend.herokuapp.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Getting Started
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To get a local copy up and running follow these simple example steps.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. On the project GitHub page, navigate to the main page of the repository.
+2. Under the repository name, locate and click on a green button named `Code`.
+3. Copy the project URL as displayed.
+4. If you're running the Windows Operating System, open your command prompt. On Linux, Open your terminal.
+5. Change the current working directory to the location where you want the cloned directory to be made. Leave as it is if the current location is where you want the project to be.
+6. Type git clone, and then paste the URL you copied in Step 3.
+    e.g. $ `git clone git@github.com:HillaryOkello/see-a-doctor-frontend.git`
+7. Press Enter. Your local copy will be created.
+8. Run `npm start`, then the server is automatically opened
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Authors
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+👤 **Hillary Okello**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Github: [HillaryOkello](https://github.com/HillaryOkello)
+- Twitter: [@Kellyhillary4](https://twitter.com/kellyhillary4)
+- LinkedIn: [HillaryOkello](https://www.linkedin.com/in/hillary-okello/)
+- Email: [hillariouskelly@gmail.com](mailto:hillariouskelly@gmail.com)
+
+## Contributing
+
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/HillaryOkello/see-a-doctor-frontend/issues).
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## License
+
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
+
+## Acknowledgements
+
+- [Microverse](https://www.microverse.org)
+- [React](https://reactjs.org/)
+- [Redux](https://redux.js.org/)
+- [Ruby on Rails](https://rubyonrails.org/)
